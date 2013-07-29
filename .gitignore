@@ -2,6 +2,9 @@
 /Release/**
 /Debug/**
 
+# Visual Studio preferences
+tjungblut-math++.v11.suo
+
 # Compiled Object files
 *.slo
 *.lo
