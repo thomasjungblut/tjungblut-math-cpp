@@ -1,6 +1,6 @@
 This here is a Visual C++ port of specific parts of my common and math library.
 
-###These parts include:
+These parts include:
 - Fmincg (Conjugate Gradient minimizer)
 - Templated Dense Vector
 - Testcases with Google Test Framework
@@ -89,12 +89,12 @@ If something is not licensed via Apache 2.0, there is a reference or an addition
 Package Layout
 --------------
 
-###This whole project is divided into three packages:
+This whole project is divided into three packages:
 - Tests (compiles into *.exe that runs the gtestcases) just a test runner in a main method.
 - Core math (compiles into a *.lib) contains the math related stuff like Vector implementations.
 - Core ml (compiles into a *.lib) contains the minimizer and in the future maybe some ML algorithms.
 
-###Every of the three packages have the same directory layout:
+Every of the three packages have the same directory layout:
 - include (contains headers)
 - src / src, test (contains implementations and testcases)
 
