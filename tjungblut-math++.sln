@@ -3,21 +3,20 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "tjungblut-math++", "tjungblut-math++\tjungblut-math++.vcxproj", "{0C65EA1F-2952-48D2-86DA-47F70CA1A5AD}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "tjungblut-ml", "tjungblut-ml\tjungblut-ml.vcxproj", "{6983CA61-F6C7-40B2-8E2B-A973C8D2D447}"
-	ProjectSection(ProjectDependencies) = postProject
-		{0C65EA1F-2952-48D2-86DA-47F70CA1A5AD} = {0C65EA1F-2952-48D2-86DA-47F70CA1A5AD}
-	EndProjectSection
-EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "test-runner", "test-runner\TestRunner.vcxproj", "{F289A5DC-0AFA-4D7B-BA45-06FC54D4965F}"
-	ProjectSection(ProjectDependencies) = postProject
-		{0C65EA1F-2952-48D2-86DA-47F70CA1A5AD} = {0C65EA1F-2952-48D2-86DA-47F70CA1A5AD}
-		{6983CA61-F6C7-40B2-8E2B-A973C8D2D447} = {6983CA61-F6C7-40B2-8E2B-A973C8D2D447}
-	EndProjectSection
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{F5E05288-ED07-45F9-8D62-377992774B61}"
 	ProjectSection(SolutionItems) = preProject
 		PropertySheet.props = PropertySheet.props
 		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "main", "main\main.vcxproj", "{F289A5DC-0AFA-4D7B-BA45-06FC54D4965F}"
+	ProjectSection(ProjectDependencies) = postProject
+		{0C65EA1F-2952-48D2-86DA-47F70CA1A5AD} = {0C65EA1F-2952-48D2-86DA-47F70CA1A5AD}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "test", "test\test.vcxproj", "{25EC9671-2DC6-44F6-8A82-C4948AFEBC66}"
+	ProjectSection(ProjectDependencies) = postProject
+		{0C65EA1F-2952-48D2-86DA-47F70CA1A5AD} = {0C65EA1F-2952-48D2-86DA-47F70CA1A5AD}
 	EndProjectSection
 EndProject
 Global
@@ -30,14 +29,14 @@ Global
 		{0C65EA1F-2952-48D2-86DA-47F70CA1A5AD}.Debug|Win32.Build.0 = Debug|Win32
 		{0C65EA1F-2952-48D2-86DA-47F70CA1A5AD}.Release|Win32.ActiveCfg = Release|Win32
 		{0C65EA1F-2952-48D2-86DA-47F70CA1A5AD}.Release|Win32.Build.0 = Release|Win32
-		{6983CA61-F6C7-40B2-8E2B-A973C8D2D447}.Debug|Win32.ActiveCfg = Debug|Win32
-		{6983CA61-F6C7-40B2-8E2B-A973C8D2D447}.Debug|Win32.Build.0 = Debug|Win32
-		{6983CA61-F6C7-40B2-8E2B-A973C8D2D447}.Release|Win32.ActiveCfg = Release|Win32
-		{6983CA61-F6C7-40B2-8E2B-A973C8D2D447}.Release|Win32.Build.0 = Release|Win32
 		{F289A5DC-0AFA-4D7B-BA45-06FC54D4965F}.Debug|Win32.ActiveCfg = Debug|Win32
 		{F289A5DC-0AFA-4D7B-BA45-06FC54D4965F}.Debug|Win32.Build.0 = Debug|Win32
 		{F289A5DC-0AFA-4D7B-BA45-06FC54D4965F}.Release|Win32.ActiveCfg = Release|Win32
 		{F289A5DC-0AFA-4D7B-BA45-06FC54D4965F}.Release|Win32.Build.0 = Release|Win32
+		{25EC9671-2DC6-44F6-8A82-C4948AFEBC66}.Debug|Win32.ActiveCfg = Debug|Win32
+		{25EC9671-2DC6-44F6-8A82-C4948AFEBC66}.Debug|Win32.Build.0 = Debug|Win32
+		{25EC9671-2DC6-44F6-8A82-C4948AFEBC66}.Release|Win32.ActiveCfg = Release|Win32
+		{25EC9671-2DC6-44F6-8A82-C4948AFEBC66}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

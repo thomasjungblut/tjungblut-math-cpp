@@ -7,7 +7,7 @@
 namespace tjmath {
 
 	template <class VALUE_TYPE>
-	// basically for doubles, floats and ints
+	// basically for doubles and floats, templates for those are defined in the cpp file
 	class DenseVector {
 
 	public:

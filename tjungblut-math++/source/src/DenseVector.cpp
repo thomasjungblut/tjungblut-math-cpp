@@ -356,4 +356,8 @@ namespace tjmath {
 	{
 		return this->data[maxIndex()];
 	}
+
+	template class DenseVector<int>;
+	template class DenseVector<float>;
+	template class DenseVector<double>;
 }
