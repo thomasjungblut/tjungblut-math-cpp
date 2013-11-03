@@ -90,26 +90,15 @@ Package Layout
 --------------
 
 This whole project is divided into three packages:
-- Tests (compiles into *.exe that runs the gtestcases) just a test runner in a main method.
+- Main (simple main method that runs an example fmincg optimization)
 - Core math (compiles into a *.lib) contains the math related stuff like Vector implementations.
-- Core ml (compiles into a *.lib) contains the minimizer and in the future maybe some ML algorithms.
-
-Every of the three packages have the same directory layout:
-- include (contains headers)
-- src / src, test (contains implementations and testcases)
-
-The top level contains the lib folder, which contains already precompiled gtest libraries for debug and release mode.
+- Tests (simple visual studio unit tests)
 
 Build
 -----
 
 You can easily import the solution into Visual Studio 2012. 
-To really compile it you actually just need to change the ${gtest_include} macro in the `PropertySheet.props` to whatever path you have added the include path of the [Google test framework](https://code.google.com/p/googletest/ "GTest").
-
-For the test integration in Visual Studio 2012, I used the [Google Test Adapter Extension](http://visualstudiogallery.msdn.microsoft.com/f00c0f72-ac71-4c80-bf8b-6fe381548031 "Ext").
-
-The whole build process is already preconfigured, but the order is to compile the tjungblut-math++ subproject, then using the resulted lib\*.lib the tjungblut-ml project is compiled.
-The test package will just pick up the compiled *.lib files of both subprojects and link them together with a main test runner. This runner can be found in either the Release\ or Debug\ folder.
+The whole build process is already preconfigured, but the order is to compile the tjungblut-math++ subproject, then using the resulted lib\*.lib the test and main projects are compiled.
 
 Have fun hacking!
 
